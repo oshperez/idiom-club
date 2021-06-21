@@ -1,0 +1,53 @@
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+.accordion {
+  width: 80%;
+  /* margin-left: 10%; */
+}
+
+.accordion-button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.2rem;
+  background-color: #f8f8f8;
+  width: 100%;
+  padding: 10px;
+  outline: none;
+  border: none;
+}
+
+.accordion-button span:first-child {
+  text-align: left;
+}
+
+div.accordion-section + div.accordion-section {
+  margin-top: 5px;
+}
+
+div.accordion-section:not(:last-child) > ul {
+  margin-bottom: -5px;
+}
+
+.accordion-button span {
+  display: flex;
+  align-items: center;
+}
+
+ul.accordion-items {
+  display: none;
+}
+
+ul.accordion-items.visible {
+  display: block;
+  padding: 0 10px;
+}
+
+ul.accordion-items.visible > li {
+  padding: 5px 10px;
+}
